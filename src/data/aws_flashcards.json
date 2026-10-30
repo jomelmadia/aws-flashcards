@@ -506,6 +506,134 @@
         "cost optimization",
         "architecture"
       ]
+    },
+    {
+      "id": "aws-044",
+      "category": "Security",
+      "question": "What is AWS Trusted Advisor?",
+      "answer": "AWS Trusted Advisor reviews your AWS environment and recommends improvements across areas such as cost optimization, performance, security, fault tolerance, service limits, and operational excellence. Think of it as an AWS best-practice consultant.",
+      "tags": [
+        "Trusted Advisor",
+        "best practices",
+        "cost optimization",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-045",
+      "category": "Security",
+      "question": "What is Amazon Inspector?",
+      "answer": "Amazon Inspector automatically discovers and assesses supported AWS workloads for software vulnerabilities and unintended network exposure. Think of it as a vulnerability checker for supported EC2 instances, container images in ECR, and Lambda functions.",
+      "tags": [
+        "Inspector",
+        "vulnerability management",
+        "security",
+        "EC2",
+        "ECR",
+        "Lambda"
+      ]
+    },
+    {
+      "id": "aws-046",
+      "category": "Security",
+      "question": "What is Amazon GuardDuty?",
+      "answer": "Amazon GuardDuty is a threat-detection service that analyzes relevant AWS logs and signals to identify suspicious activity and potential threats. Think of it as a security alarm watching for unusual behavior in your AWS environment.",
+      "tags": [
+        "GuardDuty",
+        "threat detection",
+        "suspicious activity",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-047",
+      "category": "Security",
+      "question": "What is AWS Security Hub?",
+      "answer": "AWS Security Hub centralizes and helps prioritize security findings and security posture information from supported AWS services and other integrations. Think of it as one dashboard for reviewing security issues across your AWS environment.",
+      "tags": [
+        "Security Hub",
+        "security findings",
+        "posture management",
+        "centralization"
+      ]
+    },
+    {
+      "id": "aws-048",
+      "category": "Monitoring",
+      "question": "What is Amazon CloudWatch?",
+      "answer": "Amazon CloudWatch collects and monitors metrics, logs, and events from AWS resources and applications. You can use it to create dashboards, alarms, and automated responses. Think of it as the monitoring system for your AWS applications and infrastructure.",
+      "tags": [
+        "CloudWatch",
+        "monitoring",
+        "metrics",
+        "logs",
+        "alarms"
+      ]
+    },
+    {
+      "id": "aws-049",
+      "category": "Security",
+      "question": "How do Trusted Advisor, Inspector, GuardDuty, Security Hub, and CloudWatch differ?",
+      "answer": "Trusted Advisor recommends AWS best-practice improvements. Inspector finds software vulnerabilities and network exposure. GuardDuty detects suspicious activity and potential threats. Security Hub centralizes security findings. CloudWatch monitors metrics, logs, and events. Remember: Advisor recommends, Inspector scans, GuardDuty detects, Security Hub consolidates, and CloudWatch monitors.",
+      "tags": [
+        "AWS security",
+        "Trusted Advisor",
+        "Inspector",
+        "GuardDuty",
+        "Security Hub",
+        "CloudWatch",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-050",
+      "category": "Security & Compliance",
+      "question": "What is AWS Artifact?",
+      "answer": "AWS Artifact is AWS's self-service portal for accessing compliance documents and agreements. Artifact Reports lets you download AWS compliance reports and certifications, such as SOC reports, ISO certifications, and PCI DSS documentation. Artifact Agreements lets you review and accept certain legal agreements with AWS. Remember: Artifact provides evidence about AWS's compliance; it does not automatically certify your own application or company.",
+      "tags": [
+        "AWS Artifact",
+        "compliance",
+        "SOC",
+        "ISO",
+        "PCI DSS",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-051",
+      "category": "Global Infrastructure",
+      "question": "What is an AWS Region?",
+      "answer": "An AWS Region is a separate geographic area where AWS has multiple data centers grouped into Availability Zones. You choose a Region to place resources close to users, meet data-residency requirements, or improve resilience. Remember: Region = geographic area.",
+      "tags": [
+        "AWS Region",
+        "global infrastructure",
+        "geography",
+        "data residency"
+      ]
+    },
+    {
+      "id": "aws-052",
+      "category": "Global Infrastructure",
+      "question": "What is an Availability Zone (AZ)?",
+      "answer": "An Availability Zone is an isolated location within an AWS Region, made up of one or more data centers with independent power, cooling, and networking. AZs are connected to other AZs in the same Region through high-bandwidth, low-latency links. Deploying across multiple AZs helps an application keep running if one AZ has a failure. Remember: AZ = isolated location inside a Region.",
+      "tags": [
+        "Availability Zone",
+        "AZ",
+        "high availability",
+        "fault tolerance"
+      ]
+    },
+    {
+      "id": "aws-053",
+      "category": "Global Infrastructure",
+      "question": "What is the difference between an AWS Region and an Availability Zone?",
+      "answer": "A Region is a geographic area; an Availability Zone is an isolated location within that Region. A Region contains multiple AZs. For example, you can deploy an application across two AZs in one Region so it can tolerate the failure of one AZ. Remember: Region = where in the world; AZ = which isolated location within that Region.",
+      "tags": [
+        "AWS Region",
+        "Availability Zone",
+        "comparison",
+        "high availability"
+      ]
     }
   ]
 }
