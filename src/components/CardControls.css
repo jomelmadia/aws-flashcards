@@ -1,6 +1,36 @@
-.ctl { display: flex; gap: 10px; margin-top: 20px; }
-.btn { flex: 1; border: 1px solid var(--line); background: var(--front); border-radius: 10px; padding: 12px; font-weight: 500; }
-.btn:disabled { opacity: 0.4; cursor: default; }
-.btn.main { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); flex: 2; }
-.tools { display: flex; justify-content: center; gap: 14px; margin-top: 16px; }
-.link { background: none; border: 0; color: var(--muted); text-decoration: underline; padding: 4px; }
+.ctl {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.btn {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: var(--front);
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 500;
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.btn.main {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  flex: 2;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+.link {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  text-decoration: underline;
+  padding: 4px;
+}

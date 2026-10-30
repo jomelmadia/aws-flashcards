@@ -7,7 +7,10 @@ export function useKeyboardShortcuts({ onPrev, onNext, onFlip }) {
     const handler = (e) => {
       if (e.key === "ArrowRight") onNext();
       else if (e.key === "ArrowLeft") onPrev();
-      else if ((e.key === " " || e.key === "Enter") && e.target.tagName !== "BUTTON") {
+      else if (
+        (e.key === " " || e.key === "Enter") &&
+        e.target.tagName !== "BUTTON"
+      ) {
         e.preventDefault();
         onFlip();
       }

@@ -1,4 +1,9 @@
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
 .chip {
   border: 1px solid var(--line);
   background: transparent;

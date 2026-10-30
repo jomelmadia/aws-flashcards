@@ -6,7 +6,11 @@ export default function FlashCard({ card, flipped, onFlip }) {
       <button
         className={`card${flipped ? " flipped" : ""}`}
         onClick={onFlip}
-        aria-label={flipped ? "Showing answer. Flip to question" : "Showing question. Flip to answer"}
+        aria-label={
+          flipped
+            ? "Showing answer. Flip to question"
+            : "Showing question. Flip to answer"
+        }
       >
         <span className="inner">
           <span className="face front">
@@ -19,7 +23,9 @@ export default function FlashCard({ card, flipped, onFlip }) {
             <span className="a">{card.answer}</span>
             <span className="tags">
               {(card.tags || []).map((t) => (
-                <span key={t} className="tag">{t}</span>
+                <span key={t} className="tag">
+                  {t}
+                </span>
               ))}
             </span>
           </span>

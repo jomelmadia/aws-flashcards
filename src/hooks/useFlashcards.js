@@ -9,12 +9,13 @@ export function useFlashcards(allCards) {
 
   const categories = useMemo(
     () => ["All", ...new Set(allCards.map((c) => c.category))],
-    [allCards]
+    [allCards],
   );
 
   const deck = useMemo(
-    () => (category === "All" ? order : order.filter((c) => c.category === category)),
-    [category, order]
+    () =>
+      category === "All" ? order : order.filter((c) => c.category === category),
+    [category, order],
   );
 
   const flip = useCallback(() => setFlipped((f) => !f), []);
@@ -24,7 +25,7 @@ export function useFlashcards(allCards) {
       setFlipped(false);
       setIndex((i) => Math.min(deck.length - 1, Math.max(0, i + delta)));
     },
-    [deck.length]
+    [deck.length],
   );
 
   const selectCategory = (c) => {
@@ -46,8 +47,16 @@ export function useFlashcards(allCards) {
   };
 
   return {
-    categories, category, deck, index, flipped,
+    categories,
+    category,
+    deck,
+    index,
+    flipped,
     card: deck[index],
-    flip, move, selectCategory, shuffleDeck, resetOrder,
+    flip,
+    move,
+    selectCategory,
+    shuffleDeck,
+    resetOrder,
   };
 }

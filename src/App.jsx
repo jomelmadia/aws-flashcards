@@ -28,7 +28,11 @@ export default function App() {
 
       {fc.card && (
         <>
-          <ProgressBar current={fc.index + 1} total={fc.deck.length} flipped={fc.flipped} />
+          <ProgressBar
+            current={fc.index + 1}
+            total={fc.deck.length}
+            flipped={fc.flipped}
+          />
           <FlashCard card={fc.card} flipped={fc.flipped} onFlip={fc.flip} />
           <CardControls
             canPrev={fc.index > 0}
