@@ -16,378 +16,238 @@
       "category": "Storage",
       "question": "What is Amazon EBS?",
       "answer": "Amazon Elastic Block Store (EBS) provides persistent block storage volumes for EC2 instances. Think of it as a virtual hard drive for an EC2 server.",
-      "tags": [
-        "EBS",
-        "EC2",
-        "block storage"
-      ]
+      "tags": ["EBS", "EC2", "block storage"]
     },
     {
       "id": "aws-002",
       "category": "Storage",
       "question": "What is Amazon EFS?",
       "answer": "Amazon Elastic File System (EFS) is a managed, shared file system that multiple supported compute resources can access. It uses NFS, making it useful when several EC2 instances need shared files.",
-      "tags": [
-        "EFS",
-        "NFS",
-        "shared storage"
-      ]
+      "tags": ["EFS", "NFS", "shared storage"]
     },
     {
       "id": "aws-003",
       "category": "Storage",
       "question": "What is the difference between EBS and EFS?",
       "answer": "EBS is block storage, commonly used as a disk for an EC2 instance. EFS is a shared network file system that multiple clients can access. Remember: EBS is like a disk; EFS is like a shared network folder.",
-      "tags": [
-        "EBS",
-        "EFS",
-        "comparison"
-      ]
+      "tags": ["EBS", "EFS", "comparison"]
     },
     {
       "id": "aws-004",
       "category": "Storage",
       "question": "What is Amazon S3 Glacier?",
       "answer": "S3 Glacier is a set of S3 storage classes designed for low-cost archival storage. Retrieval speed and cost depend on the class, such as Instant Retrieval, Flexible Retrieval, or Deep Archive.",
-      "tags": [
-        "S3",
-        "Glacier",
-        "archive"
-      ]
+      "tags": ["S3", "Glacier", "archive"]
     },
     {
       "id": "aws-005",
       "category": "Compute",
       "question": "What is AWS Elastic Beanstalk?",
       "answer": "Elastic Beanstalk is a managed application deployment service. You provide application code, and AWS helps provision and manage the underlying environment, such as EC2 instances, load balancing, and scaling.",
-      "tags": [
-        "Elastic Beanstalk",
-        "deployment",
-        "PaaS"
-      ]
+      "tags": ["Elastic Beanstalk", "deployment", "PaaS"]
     },
     {
       "id": "aws-006",
       "category": "Security",
       "question": "What is Amazon Inspector?",
       "answer": "Amazon Inspector is an automated vulnerability management service. It identifies known vulnerabilities and unintended network exposure in supported workloads, including EC2 instances, ECR container images, and Lambda functions.",
-      "tags": [
-        "Inspector",
-        "vulnerability",
-        "security"
-      ]
+      "tags": ["Inspector", "vulnerability", "security"]
     },
     {
       "id": "aws-007",
       "category": "Developer Tools",
       "question": "What was AWS Cloud9?",
       "answer": "AWS Cloud9 was a browser-based integrated development environment. AWS stopped making it available to new customers; existing customers may have different access. Alternatives include local VS Code, CloudShell, or a development environment on EC2.",
-      "tags": [
-        "Cloud9",
-        "IDE",
-        "developer tools"
-      ]
+      "tags": ["Cloud9", "IDE", "developer tools"]
     },
     {
       "id": "aws-008",
       "category": "Database",
       "question": "What is Amazon Aurora?",
       "answer": "Amazon Aurora is a relational database engine compatible with MySQL and PostgreSQL, offered through Amazon RDS. AWS manages much of its database infrastructure, availability, and storage.",
-      "tags": [
-        "Aurora",
-        "RDS",
-        "database"
-      ]
+      "tags": ["Aurora", "RDS", "database"]
     },
     {
       "id": "aws-009",
       "category": "Database",
       "question": "How is Amazon Aurora different from standard RDS MySQL?",
       "answer": "Aurora is an AWS-designed MySQL- or PostgreSQL-compatible database engine with a different distributed storage and availability architecture. Standard RDS MySQL runs the MySQL engine. Aurora can offer performance and availability benefits, but compare features and cost for your workload.",
-      "tags": [
-        "Aurora",
-        "RDS",
-        "MySQL",
-        "comparison"
-      ]
+      "tags": ["Aurora", "RDS", "MySQL", "comparison"]
     },
     {
       "id": "aws-010",
       "category": "Compute",
       "question": "What is AWS Batch?",
       "answer": "AWS Batch schedules, queues, and runs batch computing jobs. It provisions and manages compute resources for jobs, commonly using containers, so you do not have to build your own job scheduler.",
-      "tags": [
-        "Batch",
-        "jobs",
-        "containers"
-      ]
+      "tags": ["Batch", "jobs", "containers"]
     },
     {
       "id": "aws-011",
       "category": "Compute",
       "question": "What is AWS Fargate?",
       "answer": "AWS Fargate is serverless compute for containers. You run containers through services such as Amazon ECS or Amazon EKS, while AWS manages the underlying server infrastructure.",
-      "tags": [
-        "Fargate",
-        "containers",
-        "serverless",
-        "ECS",
-        "EKS"
-      ]
+      "tags": ["Fargate", "containers", "serverless", "ECS", "EKS"]
     },
     {
       "id": "aws-012",
       "category": "Networking",
       "question": "What is AWS Direct Connect?",
       "answer": "AWS Direct Connect provides a dedicated network connection between an organization’s premises or data center and AWS. It can provide more consistent network performance than internet-based connectivity. The connection is not automatically encrypted; use encryption such as VPN when needed.",
-      "tags": [
-        "Direct Connect",
-        "networking",
-        "hybrid cloud"
-      ]
+      "tags": ["Direct Connect", "networking", "hybrid cloud"]
     },
     {
       "id": "aws-013",
       "category": "Compute and Pricing",
       "question": "What is an EC2 Reserved Instance?",
       "answer": "A Reserved Instance is primarily a pricing commitment that can provide a discount for eligible EC2 usage over a one- or three-year term. It is not, by itself, a guarantee of capacity.",
-      "tags": [
-        "EC2",
-        "Reserved Instance",
-        "pricing"
-      ]
+      "tags": ["EC2", "Reserved Instance", "pricing"]
     },
     {
       "id": "aws-014",
       "category": "Compute and Pricing",
       "question": "What is an EC2 Spot Instance?",
       "answer": "A Spot Instance uses spare EC2 capacity at a discounted price. AWS can interrupt it when capacity is needed, typically providing a two-minute interruption notice. Use it for fault-tolerant workloads.",
-      "tags": [
-        "EC2",
-        "Spot",
-        "pricing"
-      ]
+      "tags": ["EC2", "Spot", "pricing"]
     },
     {
       "id": "aws-015",
       "category": "Compute and Pricing",
       "question": "What is the difference between Reserved Instances and Spot Instances?",
       "answer": "Reserved Instances are a pricing commitment for eligible usage. Spot Instances use spare capacity at a discount but can be interrupted. Reserved is useful for predictable workloads; Spot is useful for flexible, interruption-tolerant workloads.",
-      "tags": [
-        "EC2",
-        "Spot",
-        "Reserved Instance",
-        "comparison"
-      ]
+      "tags": ["EC2", "Spot", "Reserved Instance", "comparison"]
     },
     {
       "id": "aws-016",
       "category": "Application Services",
       "question": "What is Amazon Connect?",
       "answer": "Amazon Connect is a cloud-based contact center service for handling customer interactions such as phone calls and chat, with features for routing, queues, and interactive voice response.",
-      "tags": [
-        "Connect",
-        "contact center",
-        "CCaaS"
-      ]
+      "tags": ["Connect", "contact center", "CCaaS"]
     },
     {
       "id": "aws-017",
       "category": "Monitoring",
       "question": "What is AWS X-Ray?",
       "answer": "AWS X-Ray helps developers trace requests as they travel through an application and its services. It helps identify latency, errors, and performance bottlenecks in distributed applications.",
-      "tags": [
-        "X-Ray",
-        "tracing",
-        "observability"
-      ]
+      "tags": ["X-Ray", "tracing", "observability"]
     },
     {
       "id": "aws-018",
       "category": "Networking and Content Delivery",
       "question": "What is Amazon CloudFront?",
       "answer": "Amazon CloudFront is a content delivery network (CDN). It caches and delivers content from edge locations closer to users, helping reduce latency and origin load.",
-      "tags": [
-        "CloudFront",
-        "CDN",
-        "caching"
-      ]
+      "tags": ["CloudFront", "CDN", "caching"]
     },
     {
       "id": "aws-019",
       "category": "Compute",
       "question": "What is Amazon Lightsail?",
       "answer": "Amazon Lightsail is a simplified cloud hosting service with bundled plans for virtual servers, storage, and networking. It is suited to straightforward workloads such as small websites and applications.",
-      "tags": [
-        "Lightsail",
-        "VPS",
-        "hosting"
-      ]
+      "tags": ["Lightsail", "VPS", "hosting"]
     },
     {
       "id": "aws-020",
       "category": "Compute",
       "question": "How does Amazon Lightsail differ from Amazon EC2?",
       "answer": "Lightsail offers simpler bundled hosting plans and an easier setup experience. EC2 offers more granular control, configuration choices, and integration with the wider AWS ecosystem.",
-      "tags": [
-        "Lightsail",
-        "EC2",
-        "comparison"
-      ]
+      "tags": ["Lightsail", "EC2", "comparison"]
     },
     {
       "id": "aws-021",
       "category": "Security",
       "question": "What is AWS Key Management Service (KMS)?",
       "answer": "AWS KMS lets you create and control cryptographic keys used to encrypt and decrypt data. AWS services such as EBS, S3, and RDS can integrate with KMS to protect stored data.",
-      "tags": [
-        "KMS",
-        "encryption",
-        "keys"
-      ]
+      "tags": ["KMS", "encryption", "keys"]
     },
     {
       "id": "aws-022",
       "category": "Security",
       "question": "What is a KMS key policy?",
       "answer": "A KMS key policy is a resource-based policy that controls who can use or manage a KMS key. IAM policies may also grant permissions, but authorization depends on the applicable key policy and IAM rules.",
-      "tags": [
-        "KMS",
-        "key policy",
-        "IAM"
-      ]
+      "tags": ["KMS", "key policy", "IAM"]
     },
     {
       "id": "aws-023",
       "category": "Security",
       "question": "What is envelope encryption?",
       "answer": "Envelope encryption uses a data key to encrypt the actual data, then protects that data key with another key, such as a KMS key. This is efficient for encrypting large amounts of data.",
-      "tags": [
-        "KMS",
-        "envelope encryption",
-        "cryptography"
-      ]
+      "tags": ["KMS", "envelope encryption", "cryptography"]
     },
     {
       "id": "aws-024",
       "category": "Security",
       "question": "What is AWS Config?",
       "answer": "AWS Config records and evaluates the configuration of supported AWS resources over time. It helps identify configuration changes and check whether resources comply with desired rules, such as requiring S3 buckets to be private.",
-      "tags": [
-        "Config",
-        "compliance",
-        "resource configuration"
-      ]
+      "tags": ["Config", "compliance", "resource configuration"]
     },
     {
       "id": "aws-025",
       "category": "Security",
       "question": "What is AWS Secrets Manager?",
       "answer": "AWS Secrets Manager securely stores, retrieves, and manages secrets such as database credentials and API keys. It supports rotation for supported secret types and integrations.",
-      "tags": [
-        "Secrets Manager",
-        "credentials",
-        "secrets"
-      ]
+      "tags": ["Secrets Manager", "credentials", "secrets"]
     },
     {
       "id": "aws-026",
       "category": "Security",
       "question": "What is the difference between AWS Config and AWS Secrets Manager?",
       "answer": "AWS Config monitors and evaluates the configuration of AWS resources. Secrets Manager stores and manages sensitive values such as passwords, API keys, and database credentials. Config checks infrastructure; Secrets Manager protects application secrets.",
-      "tags": [
-        "Config",
-        "Secrets Manager",
-        "comparison"
-      ]
+      "tags": ["Config", "Secrets Manager", "comparison"]
     },
     {
       "id": "aws-027",
       "category": "Security",
       "question": "What is the difference between AWS KMS and AWS Secrets Manager?",
       "answer": "KMS manages cryptographic keys and performs key-related cryptographic operations. Secrets Manager stores and manages secret values such as passwords and tokens, using encryption (often backed by KMS) to protect them.",
-      "tags": [
-        "KMS",
-        "Secrets Manager",
-        "comparison"
-      ]
+      "tags": ["KMS", "Secrets Manager", "comparison"]
     },
     {
       "id": "aws-028",
       "category": "Security",
       "question": "What is the difference between Amazon Inspector and AWS Config?",
       "answer": "Inspector finds software vulnerabilities and certain network exposure issues in supported workloads. AWS Config tracks resource configuration and evaluates compliance with configuration rules. Inspector asks whether software has known weaknesses; Config asks whether resources are configured correctly.",
-      "tags": [
-        "Inspector",
-        "Config",
-        "comparison"
-      ]
+      "tags": ["Inspector", "Config", "comparison"]
     },
     {
       "id": "aws-029",
       "category": "Security",
       "question": "How is Amazon Inspector different from penetration testing (VAPT)?",
       "answer": "Inspector automates vulnerability management for supported AWS workloads, including identifying known vulnerabilities. VAPT is a broader assessment that can include manual testing and attempts to exploit weaknesses. Inspector does not replace a full penetration test.",
-      "tags": [
-        "Inspector",
-        "VAPT",
-        "penetration testing"
-      ]
+      "tags": ["Inspector", "VAPT", "penetration testing"]
     },
     {
       "id": "aws-030",
       "category": "Security",
       "question": "What is the difference between Amazon Inspector and Amazon GuardDuty?",
       "answer": "Inspector identifies vulnerabilities and exposure in supported workloads. GuardDuty detects suspicious activity and potential threats using relevant AWS data sources. Inspector looks for weaknesses; GuardDuty looks for signs of malicious activity.",
-      "tags": [
-        "Inspector",
-        "GuardDuty",
-        "comparison"
-      ]
+      "tags": ["Inspector", "GuardDuty", "comparison"]
     },
     {
       "id": "aws-031",
       "category": "Security",
       "question": "What is AWS Security Hub?",
       "answer": "AWS Security Hub provides a centralized view of security findings and security posture across supported AWS services and integrations. It helps prioritize and manage findings; it is not a replacement for the individual detection services.",
-      "tags": [
-        "Security Hub",
-        "security posture",
-        "findings"
-      ]
+      "tags": ["Security Hub", "security posture", "findings"]
     },
     {
       "id": "aws-032",
       "category": "Security",
       "question": "What is AWS CloudTrail?",
       "answer": "AWS CloudTrail records account activity and API events, helping you audit who performed actions in AWS, what actions occurred, and when they happened.",
-      "tags": [
-        "CloudTrail",
-        "auditing",
-        "API activity"
-      ]
+      "tags": ["CloudTrail", "auditing", "API activity"]
     },
     {
       "id": "aws-033",
       "category": "Security",
       "question": "What is AWS Systems Manager Parameter Store?",
       "answer": "Parameter Store stores configuration values and parameters, including encrypted SecureString values. It is useful for application settings and some secrets; Secrets Manager is generally more specialized for secret lifecycle management and rotation.",
-      "tags": [
-        "Parameter Store",
-        "configuration",
-        "secrets"
-      ]
+      "tags": ["Parameter Store", "configuration", "secrets"]
     },
     {
       "id": "aws-034",
       "category": "Security",
       "question": "When should you use Parameter Store versus Secrets Manager?",
       "answer": "Use Parameter Store for configuration values and parameters, including encrypted values where appropriate. Use Secrets Manager for sensitive credentials that need dedicated secret management, retrieval workflows, and rotation support.",
-      "tags": [
-        "Parameter Store",
-        "Secrets Manager",
-        "comparison"
-      ]
+      "tags": ["Parameter Store", "Secrets Manager", "comparison"]
     }
   ]
 }

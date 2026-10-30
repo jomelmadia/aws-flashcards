@@ -4,7 +4,9 @@ export default function ProgressBar({ current, total, flipped }) {
   return (
     <>
       <div className="meta">
-        <span>Card {current} of {total}</span>
+        <span>
+          Card {current} of {total}
+        </span>
         <span>{flipped ? "Answer" : "Question"}</span>
       </div>
       <div className="bar">
