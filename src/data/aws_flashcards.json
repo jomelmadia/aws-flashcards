@@ -634,6 +634,293 @@
         "comparison",
         "high availability"
       ]
+    },
+    {
+      "id": "aws-054",
+      "category": "Global Infrastructure",
+      "question": "What is an AWS Edge Location?",
+      "answer": "An AWS Edge Location is a point of presence where AWS delivers content closer to users, commonly through Amazon CloudFront. CloudFront can cache copies of website files such as images, videos, and scripts at edge locations. When a user requests cached content, it can be delivered from a nearby edge location instead of traveling all the way to the origin server. Remember: Edge Location = brings content closer to users.",
+      "tags": [
+        "Edge Location",
+        "CloudFront",
+        "CDN",
+        "caching",
+        "global infrastructure"
+      ]
+    },
+    {
+      "id": "aws-055",
+      "category": "Global Infrastructure",
+      "question": "What is an example of an AWS Edge Location, and how is it different from a Region or Availability Zone?",
+      "answer": "Imagine your website is hosted on an EC2 instance in the Singapore Region and a visitor in the Philippines requests an image. CloudFront may serve a cached copy from an edge location closer to that visitor; if the image is not cached, CloudFront retrieves it from the origin and can cache it. A Region is a geographic area where AWS runs infrastructure; an Availability Zone is an isolated location within a Region; an Edge Location is a point of presence used to deliver content closer to users. Remember: Region = where workloads run; AZ = isolated infrastructure location; Edge Location = where content is delivered from.",
+      "tags": [
+        "Edge Location",
+        "AWS Region",
+        "Availability Zone",
+        "CloudFront",
+        "comparison",
+        "example"
+      ]
+    },
+    {
+      "id": "aws-056",
+      "category": "Management & Governance",
+      "question": "What is AWS CloudFormation?",
+      "answer": "AWS CloudFormation is an Infrastructure as Code (IaC) service. You describe the AWS resources you want in a YAML or JSON template, and CloudFormation provisions and manages them as a stack. You can create, update, and delete the stack to manage its resources together. For example, a template can define an EC2 instance and its security group. Think of it as Docker Compose for AWS infrastructure. Remember: CloudFormation = describe infrastructure as code, and AWS builds it.",
+      "tags": [
+        "CloudFormation",
+        "Infrastructure as Code",
+        "IaC",
+        "templates",
+        "stacks",
+        "automation"
+      ]
+    },
+    {
+      "id": "aws-057",
+      "category": "Security and Monitoring",
+      "question": "What are the main AWS security, compliance, and monitoring services?",
+      "answer": "Trusted Advisor — recommends improvements to your AWS environment. Inspector — finds software vulnerabilities. GuardDuty — detects suspicious activity and potential threats. Security Hub — centralizes security findings. CloudWatch — monitors metrics, logs, and alarms. Artifact — provides AWS compliance reports and agreements.",
+      "tags": [
+        "Trusted Advisor",
+        "Inspector",
+        "GuardDuty",
+        "Security Hub",
+        "CloudWatch",
+        "Artifact",
+        "security",
+        "compliance",
+        "monitoring",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-058",
+      "category": "Networking and Content Delivery",
+      "question": "What is Elastic Load Balancing (ELB), and how does it work?",
+      "answer": "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, or IP addresses. For example, an Application Load Balancer can distribute website requests across three EC2 instances and stop sending traffic to an unhealthy instance. Main types: Application Load Balancer (ALB) for HTTP/HTTPS at Layer 7; Network Load Balancer (NLB) for high-performance TCP/UDP/TLS at Layer 4; Gateway Load Balancer (GWLB) for virtual network appliances; and Classic Load Balancer (CLB), the older generation. ELB distributes traffic; Auto Scaling adds or removes capacity.",
+      "tags": [
+        "ELB",
+        "Elastic Load Balancing",
+        "ALB",
+        "NLB",
+        "GWLB",
+        "CLB",
+        "EC2",
+        "load balancer",
+        "high availability",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "id": "aws-059",
+      "category": "AWS Well-Architected Framework",
+      "question": "What are the six pillars of the AWS Well-Architected Framework?",
+      "answer": "The six pillars are Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. They provide a way to evaluate and improve cloud workloads. A design decision can support more than one pillar.",
+      "tags": [
+        "Well-Architected",
+        "pillars",
+        "framework"
+      ]
+    },
+    {
+      "id": "aws-060",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Operational Excellence pillar? Give an example.",
+      "answer": "Operational Excellence focuses on running and monitoring systems, continually improving processes, and learning from operational events. Example: a team uses infrastructure as code, centralized logs, dashboards, runbooks, and post-incident reviews to deploy and operate an application consistently.",
+      "tags": [
+        "Well-Architected",
+        "Operational Excellence",
+        "operations",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "aws-061",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Security pillar? Give an example.",
+      "answer": "Security focuses on protecting data, systems, and assets through risk assessment and security controls. Example: an application uses IAM least-privilege roles, MFA, encryption with AWS KMS, network segmentation, and continuous security monitoring.",
+      "tags": [
+        "Well-Architected",
+        "Security",
+        "IAM",
+        "encryption"
+      ]
+    },
+    {
+      "id": "aws-062",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Reliability pillar? Give an example.",
+      "answer": "Reliability focuses on ensuring a workload performs its intended function correctly and consistently, recovering from failures, and handling changing demand. Example: deploy across multiple Availability Zones, use load balancing and health checks, back up data, and test recovery procedures.",
+      "tags": [
+        "Well-Architected",
+        "Reliability",
+        "availability",
+        "recovery"
+      ]
+    },
+    {
+      "id": "aws-063",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Performance Efficiency pillar? Give an example.",
+      "answer": "Performance Efficiency focuses on using computing resources efficiently to meet requirements and adapting as technology and demand change. Example: benchmark instance types, use caching or CloudFront, choose an appropriate database, and scale resources based on workload metrics.",
+      "tags": [
+        "Well-Architected",
+        "Performance Efficiency",
+        "performance",
+        "scaling"
+      ]
+    },
+    {
+      "id": "aws-064",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Cost Optimization pillar? Give an example.",
+      "answer": "Cost Optimization focuses on delivering business value at the lowest appropriate cost, avoiding waste, and understanding spending. Example: right-size underused EC2 instances, stop non-production resources when idle, use suitable Savings Plans for steady usage, and review costs with AWS Cost Explorer.",
+      "tags": [
+        "Well-Architected",
+        "Cost Optimization",
+        "cost",
+        "right-sizing"
+      ]
+    },
+    {
+      "id": "aws-065",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Sustainability pillar? Give an example.",
+      "answer": "Sustainability focuses on minimizing the environmental impacts of running cloud workloads, especially energy use and resource consumption. Example: right-size resources, use managed services and efficient architectures, scale capacity with demand, and remove idle resources.",
+      "tags": [
+        "Well-Architected",
+        "Sustainability",
+        "efficiency",
+        "environment"
+      ]
+    },
+    {
+      "id": "aws-066",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A team deploys its application across multiple Availability Zones and configures automatic failover and tested backups. Which Well-Architected pillar is primarily addressed?",
+      "answer": "Reliability. Multi-AZ deployment, failover, backups, and recovery testing help the workload continue operating and recover from failures.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Reliability"
+      ]
+    },
+    {
+      "id": "aws-067",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A company requires MFA, grants each application only the IAM permissions it needs, and encrypts sensitive data. Which Well-Architected pillar is primarily addressed?",
+      "answer": "Security. MFA, least-privilege access, and encryption protect identities, data, and systems. These controls can also support compliance and operational goals.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Security",
+        "IAM"
+      ]
+    },
+    {
+      "id": "aws-068",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: Developers use CloudWatch dashboards, automated deployments, runbooks, and post-incident reviews to improve how they operate a service. Which pillar is primarily addressed?",
+      "answer": "Operational Excellence. The focus is on operating, observing, automating, and continually improving the workload and its processes.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Operational Excellence",
+        "CloudWatch"
+      ]
+    },
+    {
+      "id": "aws-069",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A web application adds caching, selects a more suitable EC2 instance family after benchmarking, and uses CloudFront to reduce latency. Which pillar is primarily addressed?",
+      "answer": "Performance Efficiency. The changes improve how effectively the workload uses compute and delivery resources to meet performance requirements.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Performance Efficiency",
+        "CloudFront"
+      ]
+    },
+    {
+      "id": "aws-070",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A company identifies idle EC2 instances, rightsizes oversized databases, and chooses a Savings Plan for predictable compute usage. Which pillar is primarily addressed?",
+      "answer": "Cost Optimization. The actions reduce waste and align spending with actual workload needs. Rightsizing can also improve sustainability.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Cost Optimization",
+        "Savings Plans"
+      ]
+    },
+    {
+      "id": "aws-071",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A team removes unused resources, scales capacity with actual demand, and redesigns a workload to consume fewer compute resources. Which pillar is primarily addressed?",
+      "answer": "Sustainability. The goal is to reduce the environmental impact of the workload by improving resource utilization and avoiding unnecessary consumption. These changes may also reduce cost.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Sustainability",
+        "resource efficiency"
+      ]
+    },
+    {
+      "id": "aws-072",
+      "category": "AWS Cloud Benefits",
+      "question": "What are the six major benefits of AWS Cloud?",
+      "answer": "- Trade capital expense for variable expense\n- Benefit from economies of scale\n- Stop guessing capacity\n- Increase speed and agility\n- Stop spending money running and maintaining data centers\n- Go global in minutes",
+      "tags": [
+        "cloud benefits",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "aws-073",
+      "category": "AWS Cloud Benefits",
+      "question": "What is elasticity in cloud computing?",
+      "answer": "Elasticity is the ability to automatically increase or decrease computing resources as demand changes. For example, EC2 Auto Scaling can add instances during a traffic spike and remove them when traffic falls.",
+      "tags": [
+        "elasticity",
+        "scalability",
+        "EC2",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "id": "aws-074",
+      "category": "AWS Cloud Benefits",
+      "question": "What is the difference between elasticity and scalability?",
+      "answer": "Scalability is the ability to increase or decrease capacity to handle workload changes, whether manually or automatically. Elasticity is the dynamic adjustment of resources to match changing demand, often automatically scaling out and back in.",
+      "tags": [
+        "elasticity",
+        "scalability"
+      ]
+    },
+    {
+      "id": "aws-075",
+      "category": "AWS Cloud Benefits",
+      "question": "Which AWS services can work together to provide elasticity for an application?",
+      "answer": "EC2 Auto Scaling adds or removes EC2 instances; Elastic Load Balancing distributes incoming traffic across healthy instances; and Amazon CloudWatch monitors metrics and can trigger scaling policies.",
+      "tags": [
+        "elasticity",
+        "EC2",
+        "Auto Scaling",
+        "ELB",
+        "CloudWatch"
+      ]
+    },
+    {
+      "id": "aws-076",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: An online store normally runs two EC2 instances. During a sale, traffic spikes and Auto Scaling launches four more instances. When traffic returns to normal, the extra instances are removed. Which cloud benefit does this demonstrate?",
+      "answer": "Elasticity. Resources automatically scale out when demand increases and scale in when demand decreases.",
+      "tags": [
+        "scenario",
+        "elasticity",
+        "Auto Scaling"
+      ]
     }
   ]
 }
