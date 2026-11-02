@@ -506,6 +506,708 @@
         "cost optimization",
         "architecture"
       ]
+    },
+    {
+      "id": "aws-044",
+      "category": "Security",
+      "question": "What is AWS Trusted Advisor?",
+      "answer": "AWS Trusted Advisor reviews your AWS environment and recommends improvements across areas such as cost optimization, performance, security, fault tolerance, service limits, and operational excellence. Think of it as an AWS best-practice consultant.",
+      "tags": [
+        "Trusted Advisor",
+        "best practices",
+        "cost optimization",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-045",
+      "category": "Security",
+      "question": "What is Amazon Inspector?",
+      "answer": "Amazon Inspector automatically discovers and assesses supported AWS workloads for software vulnerabilities and unintended network exposure. Think of it as a vulnerability checker for supported EC2 instances, container images in ECR, and Lambda functions.",
+      "tags": [
+        "Inspector",
+        "vulnerability management",
+        "security",
+        "EC2",
+        "ECR",
+        "Lambda"
+      ]
+    },
+    {
+      "id": "aws-046",
+      "category": "Security",
+      "question": "What is Amazon GuardDuty?",
+      "answer": "Amazon GuardDuty is a threat-detection service that analyzes relevant AWS logs and signals to identify suspicious activity and potential threats. Think of it as a security alarm watching for unusual behavior in your AWS environment.",
+      "tags": [
+        "GuardDuty",
+        "threat detection",
+        "suspicious activity",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-047",
+      "category": "Security",
+      "question": "What is AWS Security Hub?",
+      "answer": "AWS Security Hub centralizes and helps prioritize security findings and security posture information from supported AWS services and other integrations. Think of it as one dashboard for reviewing security issues across your AWS environment.",
+      "tags": [
+        "Security Hub",
+        "security findings",
+        "posture management",
+        "centralization"
+      ]
+    },
+    {
+      "id": "aws-048",
+      "category": "Monitoring",
+      "question": "What is Amazon CloudWatch?",
+      "answer": "Amazon CloudWatch collects and monitors metrics, logs, and events from AWS resources and applications. You can use it to create dashboards, alarms, and automated responses. Think of it as the monitoring system for your AWS applications and infrastructure.",
+      "tags": [
+        "CloudWatch",
+        "monitoring",
+        "metrics",
+        "logs",
+        "alarms"
+      ]
+    },
+    {
+      "id": "aws-049",
+      "category": "Security",
+      "question": "How do Trusted Advisor, Inspector, GuardDuty, Security Hub, and CloudWatch differ?",
+      "answer": "Trusted Advisor recommends AWS best-practice improvements. Inspector finds software vulnerabilities and network exposure. GuardDuty detects suspicious activity and potential threats. Security Hub centralizes security findings. CloudWatch monitors metrics, logs, and events. Remember: Advisor recommends, Inspector scans, GuardDuty detects, Security Hub consolidates, and CloudWatch monitors.",
+      "tags": [
+        "AWS security",
+        "Trusted Advisor",
+        "Inspector",
+        "GuardDuty",
+        "Security Hub",
+        "CloudWatch",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-050",
+      "category": "Security & Compliance",
+      "question": "What is AWS Artifact?",
+      "answer": "AWS Artifact is AWS's self-service portal for accessing compliance documents and agreements. Artifact Reports lets you download AWS compliance reports and certifications, such as SOC reports, ISO certifications, and PCI DSS documentation. Artifact Agreements lets you review and accept certain legal agreements with AWS. Remember: Artifact provides evidence about AWS's compliance; it does not automatically certify your own application or company.",
+      "tags": [
+        "AWS Artifact",
+        "compliance",
+        "SOC",
+        "ISO",
+        "PCI DSS",
+        "security"
+      ]
+    },
+    {
+      "id": "aws-051",
+      "category": "Global Infrastructure",
+      "question": "What is an AWS Region?",
+      "answer": "An AWS Region is a separate geographic area where AWS has multiple data centers grouped into Availability Zones. You choose a Region to place resources close to users, meet data-residency requirements, or improve resilience. Remember: Region = geographic area.",
+      "tags": [
+        "AWS Region",
+        "global infrastructure",
+        "geography",
+        "data residency"
+      ]
+    },
+    {
+      "id": "aws-052",
+      "category": "Global Infrastructure",
+      "question": "What is an Availability Zone (AZ)?",
+      "answer": "An Availability Zone is an isolated location within an AWS Region, made up of one or more data centers with independent power, cooling, and networking. AZs are connected to other AZs in the same Region through high-bandwidth, low-latency links. Deploying across multiple AZs helps an application keep running if one AZ has a failure. Remember: AZ = isolated location inside a Region.",
+      "tags": [
+        "Availability Zone",
+        "AZ",
+        "high availability",
+        "fault tolerance"
+      ]
+    },
+    {
+      "id": "aws-053",
+      "category": "Global Infrastructure",
+      "question": "What is the difference between an AWS Region and an Availability Zone?",
+      "answer": "A Region is a geographic area; an Availability Zone is an isolated location within that Region. A Region contains multiple AZs. For example, you can deploy an application across two AZs in one Region so it can tolerate the failure of one AZ. Remember: Region = where in the world; AZ = which isolated location within that Region.",
+      "tags": [
+        "AWS Region",
+        "Availability Zone",
+        "comparison",
+        "high availability"
+      ]
+    },
+    {
+      "id": "aws-054",
+      "category": "Global Infrastructure",
+      "question": "What is an AWS Edge Location?",
+      "answer": "An AWS Edge Location is a point of presence where AWS delivers content closer to users, commonly through Amazon CloudFront. CloudFront can cache copies of website files such as images, videos, and scripts at edge locations. When a user requests cached content, it can be delivered from a nearby edge location instead of traveling all the way to the origin server. Remember: Edge Location = brings content closer to users.",
+      "tags": [
+        "Edge Location",
+        "CloudFront",
+        "CDN",
+        "caching",
+        "global infrastructure"
+      ]
+    },
+    {
+      "id": "aws-055",
+      "category": "Global Infrastructure",
+      "question": "What is an example of an AWS Edge Location, and how is it different from a Region or Availability Zone?",
+      "answer": "Imagine your website is hosted on an EC2 instance in the Singapore Region and a visitor in the Philippines requests an image. CloudFront may serve a cached copy from an edge location closer to that visitor; if the image is not cached, CloudFront retrieves it from the origin and can cache it. A Region is a geographic area where AWS runs infrastructure; an Availability Zone is an isolated location within a Region; an Edge Location is a point of presence used to deliver content closer to users. Remember: Region = where workloads run; AZ = isolated infrastructure location; Edge Location = where content is delivered from.",
+      "tags": [
+        "Edge Location",
+        "AWS Region",
+        "Availability Zone",
+        "CloudFront",
+        "comparison",
+        "example"
+      ]
+    },
+    {
+      "id": "aws-056",
+      "category": "Management & Governance",
+      "question": "What is AWS CloudFormation?",
+      "answer": "AWS CloudFormation is an Infrastructure as Code (IaC) service. You describe the AWS resources you want in a YAML or JSON template, and CloudFormation provisions and manages them as a stack. You can create, update, and delete the stack to manage its resources together. For example, a template can define an EC2 instance and its security group. Think of it as Docker Compose for AWS infrastructure. Remember: CloudFormation = describe infrastructure as code, and AWS builds it.",
+      "tags": [
+        "CloudFormation",
+        "Infrastructure as Code",
+        "IaC",
+        "templates",
+        "stacks",
+        "automation"
+      ]
+    },
+    {
+      "id": "aws-057",
+      "category": "Security and Monitoring",
+      "question": "What are the main AWS security, compliance, and monitoring services?",
+      "answer": "Trusted Advisor — recommends improvements to your AWS environment. Inspector — finds software vulnerabilities. GuardDuty — detects suspicious activity and potential threats. Security Hub — centralizes security findings. CloudWatch — monitors metrics, logs, and alarms. Artifact — provides AWS compliance reports and agreements.",
+      "tags": [
+        "Trusted Advisor",
+        "Inspector",
+        "GuardDuty",
+        "Security Hub",
+        "CloudWatch",
+        "Artifact",
+        "security",
+        "compliance",
+        "monitoring",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-058",
+      "category": "Networking and Content Delivery",
+      "question": "What is Elastic Load Balancing (ELB), and how does it work?",
+      "answer": "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, or IP addresses. For example, an Application Load Balancer can distribute website requests across three EC2 instances and stop sending traffic to an unhealthy instance. Main types: Application Load Balancer (ALB) for HTTP/HTTPS at Layer 7; Network Load Balancer (NLB) for high-performance TCP/UDP/TLS at Layer 4; Gateway Load Balancer (GWLB) for virtual network appliances; and Classic Load Balancer (CLB), the older generation. ELB distributes traffic; Auto Scaling adds or removes capacity.",
+      "tags": [
+        "ELB",
+        "Elastic Load Balancing",
+        "ALB",
+        "NLB",
+        "GWLB",
+        "CLB",
+        "EC2",
+        "load balancer",
+        "high availability",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "id": "aws-059",
+      "category": "AWS Well-Architected Framework",
+      "question": "What are the six pillars of the AWS Well-Architected Framework?",
+      "answer": "The six pillars are Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. They provide a way to evaluate and improve cloud workloads. A design decision can support more than one pillar.",
+      "tags": [
+        "Well-Architected",
+        "pillars",
+        "framework"
+      ]
+    },
+    {
+      "id": "aws-060",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Operational Excellence pillar? Give an example.",
+      "answer": "Operational Excellence focuses on running and monitoring systems, continually improving processes, and learning from operational events. Example: a team uses infrastructure as code, centralized logs, dashboards, runbooks, and post-incident reviews to deploy and operate an application consistently.",
+      "tags": [
+        "Well-Architected",
+        "Operational Excellence",
+        "operations",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "aws-061",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Security pillar? Give an example.",
+      "answer": "Security focuses on protecting data, systems, and assets through risk assessment and security controls. Example: an application uses IAM least-privilege roles, MFA, encryption with AWS KMS, network segmentation, and continuous security monitoring.",
+      "tags": [
+        "Well-Architected",
+        "Security",
+        "IAM",
+        "encryption"
+      ]
+    },
+    {
+      "id": "aws-062",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Reliability pillar? Give an example.",
+      "answer": "Reliability focuses on ensuring a workload performs its intended function correctly and consistently, recovering from failures, and handling changing demand. Example: deploy across multiple Availability Zones, use load balancing and health checks, back up data, and test recovery procedures.",
+      "tags": [
+        "Well-Architected",
+        "Reliability",
+        "availability",
+        "recovery"
+      ]
+    },
+    {
+      "id": "aws-063",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Performance Efficiency pillar? Give an example.",
+      "answer": "Performance Efficiency focuses on using computing resources efficiently to meet requirements and adapting as technology and demand change. Example: benchmark instance types, use caching or CloudFront, choose an appropriate database, and scale resources based on workload metrics.",
+      "tags": [
+        "Well-Architected",
+        "Performance Efficiency",
+        "performance",
+        "scaling"
+      ]
+    },
+    {
+      "id": "aws-064",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Cost Optimization pillar? Give an example.",
+      "answer": "Cost Optimization focuses on delivering business value at the lowest appropriate cost, avoiding waste, and understanding spending. Example: right-size underused EC2 instances, stop non-production resources when idle, use suitable Savings Plans for steady usage, and review costs with AWS Cost Explorer.",
+      "tags": [
+        "Well-Architected",
+        "Cost Optimization",
+        "cost",
+        "right-sizing"
+      ]
+    },
+    {
+      "id": "aws-065",
+      "category": "AWS Well-Architected Framework",
+      "question": "What is the Sustainability pillar? Give an example.",
+      "answer": "Sustainability focuses on minimizing the environmental impacts of running cloud workloads, especially energy use and resource consumption. Example: right-size resources, use managed services and efficient architectures, scale capacity with demand, and remove idle resources.",
+      "tags": [
+        "Well-Architected",
+        "Sustainability",
+        "efficiency",
+        "environment"
+      ]
+    },
+    {
+      "id": "aws-066",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A team deploys its application across multiple Availability Zones and configures automatic failover and tested backups. Which Well-Architected pillar is primarily addressed?",
+      "answer": "Reliability. Multi-AZ deployment, failover, backups, and recovery testing help the workload continue operating and recover from failures.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Reliability"
+      ]
+    },
+    {
+      "id": "aws-067",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A company requires MFA, grants each application only the IAM permissions it needs, and encrypts sensitive data. Which Well-Architected pillar is primarily addressed?",
+      "answer": "Security. MFA, least-privilege access, and encryption protect identities, data, and systems. These controls can also support compliance and operational goals.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Security",
+        "IAM"
+      ]
+    },
+    {
+      "id": "aws-068",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: Developers use CloudWatch dashboards, automated deployments, runbooks, and post-incident reviews to improve how they operate a service. Which pillar is primarily addressed?",
+      "answer": "Operational Excellence. The focus is on operating, observing, automating, and continually improving the workload and its processes.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Operational Excellence",
+        "CloudWatch"
+      ]
+    },
+    {
+      "id": "aws-069",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A web application adds caching, selects a more suitable EC2 instance family after benchmarking, and uses CloudFront to reduce latency. Which pillar is primarily addressed?",
+      "answer": "Performance Efficiency. The changes improve how effectively the workload uses compute and delivery resources to meet performance requirements.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Performance Efficiency",
+        "CloudFront"
+      ]
+    },
+    {
+      "id": "aws-070",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A company identifies idle EC2 instances, rightsizes oversized databases, and chooses a Savings Plan for predictable compute usage. Which pillar is primarily addressed?",
+      "answer": "Cost Optimization. The actions reduce waste and align spending with actual workload needs. Rightsizing can also improve sustainability.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Cost Optimization",
+        "Savings Plans"
+      ]
+    },
+    {
+      "id": "aws-071",
+      "category": "AWS Well-Architected Framework - Scenario Practice",
+      "question": "Scenario: A team removes unused resources, scales capacity with actual demand, and redesigns a workload to consume fewer compute resources. Which pillar is primarily addressed?",
+      "answer": "Sustainability. The goal is to reduce the environmental impact of the workload by improving resource utilization and avoiding unnecessary consumption. These changes may also reduce cost.",
+      "tags": [
+        "Well-Architected",
+        "scenario",
+        "Sustainability",
+        "resource efficiency"
+      ]
+    },
+    {
+      "id": "aws-072",
+      "category": "AWS Cloud Benefits",
+      "question": "What are the six major benefits of AWS Cloud?",
+      "answer": "- Trade capital expense for variable expense\n- Benefit from economies of scale\n- Stop guessing capacity\n- Increase speed and agility\n- Stop spending money running and maintaining data centers\n- Go global in minutes",
+      "tags": [
+        "cloud benefits",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "aws-073",
+      "category": "AWS Cloud Benefits",
+      "question": "What is elasticity in cloud computing?",
+      "answer": "Elasticity is the ability to automatically increase or decrease computing resources as demand changes. For example, EC2 Auto Scaling can add instances during a traffic spike and remove them when traffic falls.",
+      "tags": [
+        "elasticity",
+        "scalability",
+        "EC2",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "id": "aws-074",
+      "category": "AWS Cloud Benefits",
+      "question": "What is the difference between elasticity and scalability?",
+      "answer": "Scalability is the ability to increase or decrease capacity to handle workload changes, whether manually or automatically. Elasticity is the dynamic adjustment of resources to match changing demand, often automatically scaling out and back in.",
+      "tags": [
+        "elasticity",
+        "scalability"
+      ]
+    },
+    {
+      "id": "aws-075",
+      "category": "AWS Cloud Benefits",
+      "question": "Which AWS services can work together to provide elasticity for an application?",
+      "answer": "EC2 Auto Scaling adds or removes EC2 instances; Elastic Load Balancing distributes incoming traffic across healthy instances; and Amazon CloudWatch monitors metrics and can trigger scaling policies.",
+      "tags": [
+        "elasticity",
+        "EC2",
+        "Auto Scaling",
+        "ELB",
+        "CloudWatch"
+      ]
+    },
+    {
+      "id": "aws-076",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: An online store normally runs two EC2 instances. During a sale, traffic spikes and Auto Scaling launches four more instances. When traffic returns to normal, the extra instances are removed. Which cloud benefit does this demonstrate?",
+      "answer": "Elasticity. Resources automatically scale out when demand increases and scale in when demand decreases.",
+      "tags": [
+        "scenario",
+        "elasticity",
+        "Auto Scaling"
+      ]
+    },
+    {
+      "id": "aws-077",
+      "category": "Security",
+      "question": "What is the AWS shared responsibility model?",
+      "answer": "AWS is responsible for security of the cloud, including physical facilities, hardware, and the infrastructure running AWS services. Customers are responsible for security in the cloud, including their data, identities, permissions, and service configuration. The exact division depends on the service. Remember: AWS protects the infrastructure; you secure how you use it.",
+      "tags": [
+        "shared responsibility",
+        "security",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "aws-078",
+      "category": "Security",
+      "question": "Who is responsible for patching an EC2 instance's operating system?",
+      "answer": "The customer is responsible for patching the guest operating system and applications on an EC2 instance, along with configuring access and network controls. AWS maintains the underlying physical infrastructure and virtualization layer. Managed services can shift more maintenance to AWS, but customers still manage their data and access permissions.",
+      "tags": [
+        "shared responsibility",
+        "EC2",
+        "patching"
+      ]
+    },
+    {
+      "id": "aws-079",
+      "category": "Security",
+      "question": "What is AWS Identity and Access Management (IAM)?",
+      "answer": "IAM controls who or what can access AWS resources and which actions they can perform. Policies define permissions for identities and resources. For example, an IAM policy can allow an application to read objects from one S3 bucket without allowing it to delete them. Remember: IAM = access control for AWS.",
+      "tags": [
+        "IAM",
+        "permissions",
+        "access control"
+      ]
+    },
+    {
+      "id": "aws-080",
+      "category": "Security",
+      "question": "What is the difference between an IAM user, group, and role?",
+      "answer": "An IAM user is an identity in an AWS account that can have long-term credentials. An IAM group is a collection of IAM users that share permissions; it cannot be assumed and does not have credentials. An IAM role is an identity assumed by trusted users, applications, or AWS services using temporary credentials. Prefer federation for people and roles for workloads over long-term access keys.",
+      "tags": [
+        "IAM",
+        "users",
+        "groups",
+        "roles",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-081",
+      "category": "Security",
+      "question": "What does the principle of least privilege mean in AWS?",
+      "answer": "Grant only the permissions needed to perform a task, on only the required resources, and under appropriate conditions. For example, a reporting application that only reads one S3 bucket should not receive administrator access or permission to delete objects. Review access regularly and remove permissions that are no longer needed.",
+      "tags": [
+        "IAM",
+        "least privilege",
+        "permissions"
+      ]
+    },
+    {
+      "id": "aws-082",
+      "category": "Security",
+      "question": "What is multi-factor authentication (MFA), and why is it important?",
+      "answer": "MFA requires more than one authentication factor, such as a password plus a security key or authenticator code. It reduces the risk of account compromise when a password is stolen. Protect root and human access with MFA. MFA for console sign-in does not automatically protect every API request made with long-term access keys.",
+      "tags": [
+        "MFA",
+        "authentication",
+        "account protection"
+      ]
+    },
+    {
+      "id": "aws-083",
+      "category": "Security",
+      "question": "How should you protect and use the AWS account root user?",
+      "answer": "Protect root access with a strong, unique password and MFA, secure the associated email account, and avoid creating root access keys. Do not use root for everyday administration; use federated access or IAM roles with appropriate permissions. Use root only for tasks that specifically require it, and monitor root activity.",
+      "tags": [
+        "root user",
+        "MFA",
+        "best practices"
+      ]
+    },
+    {
+      "id": "aws-084",
+      "category": "Security",
+      "question": "What is AWS Security Token Service (STS)?",
+      "answer": "AWS STS issues temporary, limited-lifetime credentials for accessing AWS resources. It supports workflows such as assuming an IAM role and federating external identities. Temporary credentials include an access key ID, secret access key, and session token. Their permissions depend on the role and applicable policies; temporary does not automatically mean least privilege.",
+      "tags": [
+        "STS",
+        "IAM",
+        "temporary credentials",
+        "federation"
+      ]
+    },
+    {
+      "id": "aws-085",
+      "category": "Security",
+      "question": "What is AWS IAM Identity Center?",
+      "answer": "IAM Identity Center centrally manages workforce access to multiple AWS accounts and supported business applications. It can connect to an existing identity provider and use permission sets to assign AWS account access. Remember: Identity Center helps employees sign in and access their assigned accounts; it is not a replacement for workload IAM roles.",
+      "tags": [
+        "IAM Identity Center",
+        "single sign-on",
+        "workforce access",
+        "permission sets"
+      ]
+    },
+    {
+      "id": "aws-086",
+      "category": "Security",
+      "question": "What is an AWS Organizations service control policy (SCP)?",
+      "answer": "An SCP sets permission guardrails for principals in member accounts within an AWS organization. It limits the maximum available permissions but does not grant access; IAM or resource policies must still allow the action. SCPs do not restrict the management account or service-linked roles. Remember: SCP = organization-level permission boundary, not a permission grant.",
+      "tags": [
+        "Organizations",
+        "SCP",
+        "guardrails",
+        "permissions"
+      ]
+    },
+    {
+      "id": "aws-087",
+      "category": "Security",
+      "question": "What is IAM Access Analyzer?",
+      "answer": "IAM Access Analyzer helps identify supported resources that allow access from outside your chosen zone of trust, such as another AWS account or the public. It also provides policy validation and capabilities for analyzing unused access. Findings help you review permissions; a finding does not necessarily mean the access is malicious or unintended.",
+      "tags": [
+        "IAM Access Analyzer",
+        "external access",
+        "policy validation",
+        "least privilege"
+      ]
+    },
+    {
+      "id": "aws-088",
+      "category": "Security",
+      "question": "What is AWS WAF?",
+      "answer": "AWS WAF is a web application firewall that filters HTTP and HTTPS requests to supported resources such as CloudFront distributions and Application Load Balancers. Web ACL rules can help block common attacks such as SQL injection and cross-site scripting, filter IP addresses, or rate-limit requests. Remember: WAF inspects web requests; it does not replace secure application code.",
+      "tags": [
+        "WAF",
+        "web application firewall",
+        "SQL injection",
+        "web ACL"
+      ]
+    },
+    {
+      "id": "aws-089",
+      "category": "Security",
+      "question": "What is AWS Shield, and how do Standard and Advanced differ?",
+      "answer": "AWS Shield provides protection against distributed denial-of-service (DDoS) attacks. Shield Standard is automatically included at no additional charge and protects against common network and transport layer attacks. Shield Advanced is a paid service with enhanced protection for supported resources, additional visibility, and access to specialized response assistance. Features and eligibility depend on the protected resource and service requirements.",
+      "tags": [
+        "Shield",
+        "DDoS",
+        "Shield Standard",
+        "Shield Advanced"
+      ]
+    },
+    {
+      "id": "aws-090",
+      "category": "Security",
+      "question": "What is the difference between AWS WAF and AWS Shield?",
+      "answer": "WAF filters application-layer HTTP and HTTPS requests using rules, such as blocking SQL injection patterns or excessive requests from an IP address. Shield focuses on DDoS protection, especially network and transport layer attacks. They can work together: Shield helps maintain availability during attacks, while WAF controls which web requests reach the application.",
+      "tags": [
+        "WAF",
+        "Shield",
+        "DDoS",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-091",
+      "category": "Security",
+      "question": "What is the difference between a security group and a network ACL?",
+      "answer": "A security group controls traffic for associated network interfaces, such as those on EC2 instances. It is stateful and has allow rules only, so response traffic for an allowed connection is automatically permitted. A network ACL controls traffic at the subnet boundary, is stateless, and supports numbered allow and deny rules evaluated in order. Network ACL rules must permit both request and response traffic.",
+      "tags": [
+        "security groups",
+        "network ACL",
+        "VPC",
+        "stateful",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-092",
+      "category": "Security",
+      "question": "What is Amazon Macie?",
+      "answer": "Amazon Macie helps discover and protect sensitive data in Amazon S3 using machine learning and pattern matching. It can identify data such as personally identifiable information (PII) in supported objects and report bucket security risks. Macie produces findings; it does not automatically redact or remove sensitive data from your objects.",
+      "tags": [
+        "Macie",
+        "S3",
+        "sensitive data",
+        "PII"
+      ]
+    },
+    {
+      "id": "aws-093",
+      "category": "Security",
+      "question": "What is AWS Certificate Manager (ACM)?",
+      "answer": "ACM helps provision and manage TLS certificates used to secure network communications, such as HTTPS for a website behind an Application Load Balancer or CloudFront. It supports managed renewal for eligible certificates when renewal requirements are met. Remember: ACM manages certificates for encryption in transit; KMS manages cryptographic keys used by applications and AWS services.",
+      "tags": [
+        "ACM",
+        "TLS",
+        "certificates",
+        "encryption in transit"
+      ]
+    },
+    {
+      "id": "aws-094",
+      "category": "Security",
+      "question": "What is AWS CloudHSM, and how does it differ from AWS KMS?",
+      "answer": "CloudHSM provides dedicated hardware security modules in your VPC with direct control over cryptographic keys, users, and operations. You manage the HSM users and your cluster's capacity and availability design. KMS provides a more managed key service with broad AWS integrations. Choose CloudHSM when requirements call for dedicated HSMs or direct cryptographic control; choose KMS for simpler integrated key management.",
+      "tags": [
+        "CloudHSM",
+        "KMS",
+        "HSM",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-095",
+      "category": "Security",
+      "question": "What does Amazon S3 Block Public Access do?",
+      "answer": "S3 Block Public Access helps prevent public access granted through bucket policies and access control lists (ACLs). Settings can apply at the account, bucket, and access point levels, and S3 applies the most restrictive applicable combination. Keep it enabled unless public access is deliberately required. It does not encrypt data or replace least-privilege access policies.",
+      "tags": [
+        "S3",
+        "Block Public Access",
+        "bucket policies",
+        "data protection"
+      ]
+    },
+    {
+      "id": "aws-096",
+      "category": "Security",
+      "question": "What is the difference between encryption at rest and encryption in transit?",
+      "answer": "Encryption at rest protects stored data, such as objects in S3 or data on EBS volumes, often using keys managed through KMS. Encryption in transit protects data moving between systems, commonly using TLS or a VPN. Use both where appropriate. Encryption does not replace authorization: an identity with permission to retrieve and decrypt data can still read it.",
+      "tags": [
+        "encryption",
+        "KMS",
+        "TLS",
+        "data protection",
+        "comparison"
+      ]
+    },
+    {
+      "id": "aws-097",
+      "category": "Security - Scenario Practice",
+      "question": "Scenario: An application on EC2 needs to read objects from one S3 bucket. How should it obtain AWS credentials?",
+      "answer": "Attach an IAM role to the EC2 instance through an instance profile and grant only the required S3 read permissions. The AWS SDK can obtain temporary role credentials automatically. Avoid embedding long-term access keys in code or configuration files. Remember: workload role plus least privilege.",
+      "tags": [
+        "scenario",
+        "IAM role",
+        "EC2",
+        "S3",
+        "least privilege"
+      ]
+    },
+    {
+      "id": "aws-098",
+      "category": "Security - Scenario Practice",
+      "question": "Scenario: A website behind an Application Load Balancer receives SQL injection attempts. Which AWS service can help filter these requests?",
+      "answer": "AWS WAF. Associate a web ACL with the Application Load Balancer and configure appropriate managed or custom rules to detect and block malicious requests. Continue fixing application vulnerabilities, including using parameterized queries; a web application firewall is an additional defense, not a substitute for secure code.",
+      "tags": [
+        "scenario",
+        "WAF",
+        "ALB",
+        "SQL injection"
+      ]
+    },
+    {
+      "id": "aws-099",
+      "category": "Security - Scenario Practice",
+      "question": "Scenario: A company wants to find personally identifiable information stored in its S3 objects. Which AWS service should it use?",
+      "answer": "Amazon Macie. Configure sensitive data discovery for the relevant S3 data and review its findings for supported objects. Macie identifies sensitive content, while services such as GuardDuty focus on suspicious activity and Inspector focuses on workload vulnerabilities.",
+      "tags": [
+        "scenario",
+        "Macie",
+        "S3",
+        "PII"
+      ]
+    },
+    {
+      "id": "aws-100",
+      "category": "Security - Scenario Practice",
+      "question": "Scenario: A security group was changed unexpectedly. Which AWS service helps determine who made the change and when?",
+      "answer": "AWS CloudTrail. Review the relevant recorded management events for the identity, API action, timestamp, and request details. AWS Config can help show the resource's configuration history when recording is enabled, but CloudTrail provides the API activity audit trail.",
+      "tags": [
+        "scenario",
+        "CloudTrail",
+        "Config",
+        "auditing",
+        "security groups"
+      ]
     }
   ]
 }
