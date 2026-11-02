@@ -1208,6 +1208,160 @@
         "auditing",
         "security groups"
       ]
+    },
+    {
+      "id": "aws-101",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A startup avoids purchasing servers before launching its product. Instead, it uses On-Demand EC2 instances and pays for the compute it consumes. Which cloud benefit does this demonstrate?",
+      "answer": "Trade capital expense for variable expense. The startup replaces a large upfront hardware investment with usage-based spending. Remember: buying infrastructure in advance becomes paying for resources as needed; this does not guarantee every workload will cost less.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "capital expense",
+        "variable expense",
+        "EC2"
+      ]
+    },
+    {
+      "id": "aws-102",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A research team needs powerful servers for a two-day analysis. It rents cloud compute for the job instead of buying hardware that would sit unused afterward. Which financial cloud benefit is illustrated?",
+      "answer": "Trade capital expense for variable expense. The team pays for temporary compute usage instead of owning hardware for a short-lived task. It must release unneeded resources afterward and account for any remaining storage or other charges.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "capital expense",
+        "variable expense",
+        "pay-as-you-go"
+      ]
+    },
+    {
+      "id": "aws-103",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: AWS combines demand from many customers, purchases infrastructure at large scale, and can spread operating costs across that usage. Which cloud benefit can customers receive from this?",
+      "answer": "Benefit from economies of scale. Serving many customers at large scale can reduce AWS's per-unit infrastructure costs, enabling lower usage prices than customers might achieve on their own. Remember: large aggregate demand can lower unit costs.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "economies of scale",
+        "unit costs"
+      ]
+    },
+    {
+      "id": "aws-104",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A small business uses only a few cloud servers but still benefits from pricing supported by AWS's massive purchasing power. Must the business operate thousands of servers itself to receive this benefit?",
+      "answer": "No. This illustrates economies of scale: AWS aggregates demand across customers, so even a small customer can benefit from the provider's scale. This is different from a volume discount or a Savings Plan that depends on the individual customer's usage or commitment.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "economies of scale",
+        "pricing"
+      ]
+    },
+    {
+      "id": "aws-105",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A company cannot predict demand for a new application. Instead of buying enough servers for an estimated peak a year ahead, it starts small and adjusts capacity using actual demand. Which major cloud benefit is demonstrated?",
+      "answer": "Stop guessing capacity. The company can provision and adjust resources as its needs become clearer, reducing the risk of buying too much or too little hardware in advance. Elasticity can help automate these adjustments, but quotas and capacity requirements still need planning.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "stop guessing capacity",
+        "capacity planning",
+        "elasticity"
+      ]
+    },
+    {
+      "id": "aws-106",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A media company stores uploads in S3 without purchasing disk arrays sized for several years of uncertain growth. It adds data as needed and monitors its storage usage. Which major cloud benefit does this illustrate?",
+      "answer": "Stop guessing capacity. The company does not need to buy physical storage based on a long-term forecast before demand is known. S3 manages the underlying storage infrastructure, while the company still manages data lifecycle, access, costs, and applicable service limits.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "stop guessing capacity",
+        "S3",
+        "storage"
+      ]
+    },
+    {
+      "id": "aws-107",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: Developers previously waited weeks for servers to be ordered and installed. They can now provision a test environment through AWS APIs in minutes and begin testing immediately. Which cloud benefit is highlighted?",
+      "answer": "Increase speed and agility. On-demand provisioning shortens the time between an idea and a working environment, allowing teams to develop and test sooner. Remember: agility is about responding and experimenting faster, not necessarily making each application request faster.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "speed and agility",
+        "provisioning",
+        "development"
+      ]
+    },
+    {
+      "id": "aws-108",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A product team quickly creates three prototype environments, tests different ideas, and removes the unsuccessful experiments. Which cloud benefit best describes its ability to innovate quickly?",
+      "answer": "Increase speed and agility. Easy provisioning and removal of resources let the team experiment, gather feedback, and change direction quickly. Paying only for the resources used can also reduce the financial risk of experimentation, but the main focus here is faster innovation.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "speed and agility",
+        "experimentation",
+        "innovation"
+      ]
+    },
+    {
+      "id": "aws-109",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: After moving its workloads to AWS, a company closes its server room and no longer maintains racks, cooling equipment, or physical servers. Which cloud benefit does this demonstrate?",
+      "answer": "Stop spending money running and maintaining data centers. AWS operates the physical infrastructure, allowing the company to focus more effort on its business. The company still pays for cloud services and remains responsible for its data, access controls, and applicable workload maintenance.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "data center maintenance",
+        "physical infrastructure",
+        "shared responsibility"
+      ]
+    },
+    {
+      "id": "aws-110",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: An IT team that used to replace failed disks and maintain backup power for an on-premises application moves it to AWS. The team now spends more time improving customer features. Which cloud benefit is primarily illustrated?",
+      "answer": "Stop spending money running and maintaining data centers. Offloading physical infrastructure operations frees staff time for work that differentiates the business. This does not eliminate all operations: the team still manages the application and its responsibilities under the shared responsibility model.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "data center maintenance",
+        "business focus",
+        "operations"
+      ]
+    },
+    {
+      "id": "aws-111",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A company serving customers in North America expands into Japan by deploying its application in an AWS Region near Japanese users, without building a local data center. Which cloud benefit does this illustrate?",
+      "answer": "Go global in minutes. AWS's global infrastructure lets the company deploy closer to new customers much faster than constructing facilities, potentially reducing latency. Actual rollout time depends on the workload, and the team must still consider regional service availability, data residency, and compliance.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "go global in minutes",
+        "AWS Region",
+        "latency"
+      ]
+    },
+    {
+      "id": "aws-112",
+      "category": "AWS Cloud Benefits - Scenario Practice",
+      "question": "Scenario: A training company uses CloudFront to distribute cacheable course materials through edge locations around the world instead of setting up its own international delivery infrastructure. Which cloud benefit is highlighted?",
+      "answer": "Go global in minutes. CloudFront uses AWS's global edge network to help deliver content closer to learners without the company building that network itself. This can reduce delivery latency; it does not automatically deploy the application's backend in multiple Regions.",
+      "tags": [
+        "cloud benefits",
+        "scenario",
+        "go global in minutes",
+        "CloudFront",
+        "Edge Location"
+      ]
     }
   ]
 }
